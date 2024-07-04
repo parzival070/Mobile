@@ -5,15 +5,15 @@ const CursosdaTela = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Button
-        title="Técnico em Informática Integrado ao Ensino Médio"
+        title="Técnico em Informática"
         onPress={() => navigation.navigate('CourseDetail', { course: 'A' })}
       />
       <Button
-        title="Técnico em Administração integrado ao Ensino Médio"
+        title="Técnico em Administração"
         onPress={() => navigation.navigate('CourseDetail', { course: 'B' })}
       />
       <Button
-        title="Técnico em Vestuário integrado ao Ensino Médio"
+        title="Técnico em Vestuário"
         onPress={() => navigation.navigate('CourseDetail', { course: 'C' })}
       />
     </View>

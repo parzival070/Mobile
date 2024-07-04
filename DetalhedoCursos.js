@@ -13,9 +13,9 @@ const DetalhedoCursos = ({ route }) => {
       
       title: 'Técnico em Informática Integrado ao Ensino Médio',
       description: 'O curso Técnico em Informática Integrado ao Ensino Médio oferta disciplinas técnicas relacionadas com a área de TECNOLOGIA DA INFORMAÇÃO (TI) integradas às disciplinas tradicionais do ENSINO MÉDIO' ,
-      subjects: ['Materias do 1º ano', 'Fundamentos da Informática', 'Hardware e Sistemas Operacionais', 'Lógica de Programação', 'Projeto Integrador I', 'Desenvolvimento Web','TOTAL NO 1º ANO','Materias do 2° ano', 'Banco de Dados','Engenharia de Software I','Programação I','Projeto Integrador II','Redes'],
-      teachers: ['','Professor 1', 'Professor 2'],
-      hours: ['Horas','60', '120','120','30','60','390','', '90','60','120','30','60','360'],
+      subjects: ['Materias do 1º Ano', 'Fundamentos da Informática', 'Hardware e Sistemas Operacionais', 'Lógica de Programação', 'Projeto Integrador I', 'Desenvolvimento Web','Total no 1º Ano','Materias do 2° Ano', 'Banco de Dados','Engenharia de Software I','Programação I','Projeto Integrador II','Redes', 'Total no 2º Ano', 'Materias do 3° Ano','Empreendedorismo', 'Programação II', 'Projeto Integrador III', 'Administração de Redes', 'Total no 3° Ano'],
+      teachers: ['','Tiago Funk', 'Bruno A. Guilhen', 'Eduardo Stahnke', 'Rodrigo R. Nogueira','Tiago Funk','', '','Rodrigo R. Nogueira', 'Tiago Funk','Eduardo Stahnke', 'Bruno A. Guilhen', 'Bruno A. Guilhen','','', 'Thiago S. Araújo','Tiago Funk','Tiago Funk', 'Bruno A. Guilhen'],
+      hours: ['','60', '120','120','30','60','390','', '90','60','120','30','60','360','', '60', '120', '60', '60', '300'],
       image: require('./assets/info.jpg'),
       
     };
@@ -23,18 +23,18 @@ const DetalhedoCursos = ({ route }) => {
     courseData = {
         title: 'Técnico em Administração integrado ao Ensino Médio',
         description: 'O Curso Técnico em Administração tem por objetivo proporcionar aos estudantes o desenvolvimento de sua autonomia enquanto cidadãos críticos e participativos, visando ao domínio dos conhecimentos científicos e tecnológicos da administração, para atuarem de maneira consciente e responsável diante das necessidades atuais no mundo do trabalho.',
-        subjects: ['Matéria 1', 'Banco de Dados','Engenharia de Software I','Programação I','Projeto Integrador II','Redes'],
-        teachers: ['Professor 1', 'Professor 2'],
-        hours: ['2 horas', '90','60','120','30','60','360'],
+        subjects: ['Materias do 1º Ano', 'Economia', 'Fundamentos da Administração', 'Gestão de Pessoas', 'Gestão de Serviços', 'Projeto Integrador I','Total no 1º Ano','Materias do 2° Ano', 'Estatística e Matemática financeira','Gestão da produção e Logística','Marketing','Planejamento Estratégico','Projeto Integrador II', 'Total no 2º Ano', 'Materias do 3° Ano','Administração da Tecnologia da Informação', 'Administração financeira', 'Projeto Integrador III', 'Responsabilidade Social Empresarial', 'Total no 3° Ano'],
+        teachers: ['', 'André L. Kopelke', 'Jeter Lang', 'André L. Kopelke','Jeter Lang', 'Jeter Lang','' ,'','Thiago S. Araújo', 'André Luz Kopelke',  'Paulo R. S. Machado','Paulo R. S. Machado','Jeter Lang','' ,'', 'Paulo R. S. Machado','Thiago S. Araújo', 'Paulo R. S. Machado'],
+        hours: ['', '60','60','60','60','60','300','', '60','90','60','60','60','330','', '60','90','60','60','270'],
         image: require('./assets/adm.jpg'),
       };
   } else if (course === 'C') {
     courseData = {
         title: 'Técnico em Vestuário integrado ao Ensino Médio',
         description: 'O curso Técnico em Vestuário Integrado ao Ensino Médio objetiva proporcionar aos discentes o desenvolvimento de sua autonomia enquanto cidadãos críticos e participativos, visando o domínio dos conhecimentos científicos e tecnológicos, para atuarem de maneira consciente e responsável diante das necessidades atuais no mundo do trabalho, com foco na formação e a qualificação de profissionais com visão técnica para atuarem na área de confecção do vestuário, aptos a gerenciar e operacionalizar as diversas etapas do processo de produção do vestuário, em empresas da área industrial e de prestação de serviços.',
-        subjects: ['Matéria 1', 'Matéria 2'],
-        teachers: ['Professor 1', 'Professor 2'],
-        hours: ['2 horas', '3 horas'],
+        subjects: ['Materias do 1º Ano', 'Desenho de Moda e Ilustração', 'História do Vestuário', 'Projeto Integrador I', 'Tecnologia da Costura I', 'Tecnologia Têxtil','Total no 1º Ano','Materias do 2° Ano', 'Desenho Técnico de Vestuário e Têxtil','Modelagem Plana e Tecnologia','Projeto Integrador II','Tecnologia e Métodos no Processo Produtivo','Tecnologia da Costura II', 'Total no 2º Ano', 'Materias do 3° Ano','Administração e Empreendedorismo', 'Beneficiamento Têxtil', 'Desenvolvimento de Produto Sustentável	', 'Higiene e Segurança do Trabalho','Laboratório de Moulage e Confecção', 'Projeto Integrador III','Total no 3° Ano'],
+        teachers: ['', 'Lariane D. B. e Olivira','Isabla D. Felchtti','Isabla D. Felchtti','Jonathan G. de Lima', 'Ana S. de L. Vielmo', '','', 'Márcio M. Albani','Márcio M. Albani','Isabla D. Felchtti', 'Ana S. de L. Vielmo','Jonathan G. de Lima','','','Jeter Lang','Jonathan G. de Lima','Jonathan G. de Lima','Márcio M. Albani','Márcio M. Albani','Isabla D. Felchtti'],
+        hours: ['', '60','60','60','60','60','300','', '60','120','60','60','60','360','', '60','120','60','60','60','60','420'],
         image: require('./assets/vest.jpg'),
       };
   }
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '20%',
-    height: 200,
+    height: 100,
     marginBottom: 10,
     resizeMode: 'cover',
   },
